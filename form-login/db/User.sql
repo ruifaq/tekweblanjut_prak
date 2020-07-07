@@ -34,7 +34,7 @@ CREATE TABLE `login` (
 insert  into `login`(`id`,`namadpn`,`namablkng`,`email`,`password`) values 
 (20,'rui','faqri','rui@gmail.com','$2y$10$uVesqXZDVtnIxk.5yfPPvOm33KXevs9EieANZhjKNy85tV1ohfgtC'),
 (21,'axe','willford','axe@gmail.com','$2y$10$dXU1lndoQTrfwf9aa0BpoOYTAVFJBV/XNGw991a645GkljxlFUkNi'),
-(22,'dewa','asu','ewa@gmail.com','$2y$10$phBjijGGL1JEOR2KlmsdLuG.TqmY5QQlH9uD6QERDAZD/n5K7LJWq');
+(22,'dewa','gede s','ewa@gmail.com','$2y$10$phBjijGGL1JEOR2KlmsdLuG.TqmY5QQlH9uD6QERDAZD/n5K7LJWq');
 
 /*Table structure for table `user` */
 
