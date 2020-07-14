@@ -28,9 +28,7 @@
     </button>
     <div class="dropdown-menu">
       <h5 class="dropdown-header"><i class="fa fa-info-circle" aria-hidden="true"></i> Info Akun</h5>
-      <?php foreach($login as $row):?>
-      <h7 class="dropdown-header"><i class="fa fa-envelope-o" aria-hidden="true" ></i> <?= session()->getFlashdata('msg_login'); ?><?= $row->user_email;?></h7>
-      <?php endforeach;?>
+      <h7 class="dropdown-header"><i class="fa fa-envelope-o" aria-hidden="true" ></i> <?= session()->getFlashdata('msg_login'); ?></h7>
       <a class="dropdown-item" href="/user"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
      
     </div>
