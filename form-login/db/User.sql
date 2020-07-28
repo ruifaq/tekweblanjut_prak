@@ -16,6 +16,25 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`user` /*!40100 DEFAULT CHARACTER SET ut
 
 USE `user`;
 
+/*Table structure for table `ci_user` */
+
+DROP TABLE IF EXISTS `ci_user`;
+
+CREATE TABLE `ci_user` (
+  `user_id` int(3) NOT NULL,
+  `user_nama` varchar(255) NOT NULL,
+  `user_email` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `ci_user` */
+
+insert  into `ci_user`(`user_id`,`user_nama`,`user_email`) values 
+(1,'rui','rui@gmail.com'),
+(2,'dewa','dewa@gmail.com'),
+(3,'wawan','wawa@gmail.com'),
+(4,'novendra','vendra@gmail.com');
+
 /*Table structure for table `login` */
 
 DROP TABLE IF EXISTS `login`;
@@ -27,7 +46,7 @@ CREATE TABLE `login` (
   `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `login` */
 

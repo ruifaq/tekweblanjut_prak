@@ -1,0 +1,33 @@
+
+<div class="container">
+  <mat-card>
+    <br/>
+    <mat-card-title>Daftar Alamat</mat-card-title>
+<br/>
+  <button mat-raised-button color="primary" mat-button (click)="buatAlamat()">Tambah Alamat</button>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let item of dataAlamat">
+        <img matListAvatar src="assets/avatar.png" alt="...">
+        <h3 matLine> {{item.nama}} </h3>
+        <p matLine>
+        {{item.kota}}
+        </p>
+        <p matLine>
+          {{item.email}}
+        </p>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="detailAlamat(item)">Detail</button>
+          <button mat-menu-item (click)="editAlamat(item)">Edit</button>
+          <button mat-menu-item (click)="konfirmasiHapus(item.id)">Delete</button>
+</mat-menu>
+      </mat-list-item>
+    </mat-list>
+   </mat-card-content>
+  </mat-card>
+  </div>
+
+<router-outlet></router-outlet>
